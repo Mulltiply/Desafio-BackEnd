@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+body{
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    font-family: 'Karla', sans-serif;
+}
+/* TOPO DA PÁGINA */
+.pag-topo{
+    background-image: url("https://cpmconcurso.com.br/wp-content/uploads/2022/12/back-gorund-image-topo3.png");
+    background-repeat: no-repeat;
+    padding-top: 30px;
+    margin-top: -5px;
+}
+
+/* LADO ESQUERDO DO TOPO (APRESENTAÇÃO) -- */
+    /* Logo */
+.logo{
+    margin:30px 0 50px
+}
+    /* Texto topo */
+.text{
+    color: white;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 54px;
+    margin-bottom: 80px;
+}
+.buttons .btn{
+    padding: 10px;
+    text-align: left;
+}
+.buttons .btn a{
+    padding: 10px 40px;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 33px;
+    text-transform: uppercase;
+    color: white;
+    border-radius: 10px;
+    transition: all 0.3s;
+    border: 1px solid white;
+}
+.buttons .btn a:hover{
+    text-decoration: none;
+    background-color: white;
+    color: #E75B78;
+}
+
+/* LADO DIREITO DO TOPO (IMAGEM) -- */
+
+.right-side img{
+    margin-top: 80px;
+    width: auto;
+    height: 751px;
+}

@@ -1,0 +1,175 @@
+/* TOPO DA PÁGINA */
+header{
+    padding: 10px;
+    text-align: center;
+    line-height: 70px;
+    font-family: 'Karla', sans-serif;
+    font-weight: 800;
+}
+header h1{
+    font-size: 35px;
+    margin-top: 30px;
+    font-weight: 800;
+}
+
+main{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+    margin: 5vh auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+    overflow-x: scroll;
+}
+.button.cadastrar{
+    margin-bottom: 30px;
+    border-style: none;
+    height: 40;
+    padding: 6px 12px;
+    background-color: #13ce66;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+.btnyellow{
+    background-color: #FFC32A;
+    margin:0 5px;
+    border-style: none;
+    height: 40;
+    padding: 6px 12px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+.btnred{
+    background-color: #ff4949;
+    margin:0 5px;
+    border-style: none;
+    height: 40;
+    padding: 6px 12px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: box-shadow .6s ease;
+}
+.button:hover{
+    box-shadow: inset 200px 0 0 #00000033;
+}
+.records{
+    width: 100%;
+    user-select: none;
+    text-align: left;
+}
+.records th{
+    height: 50px;
+    background-color: #75C8DA;
+    padding-left: 20px;
+    font-size: 16px;  
+}
+.records tr{
+    align-items: center;
+    font-size: 15px;
+    text-align: center;
+}
+.records tr:hover{
+    background-color: #ececec;  
+}
+.records td{
+    height: 50px;
+    padding-left: 20px 0;
+    border: 1px solid #ececec;
+    
+}
+.records th:last-child,
+.records td:last-child{
+    padding: 0;
+    min-width: 150px;
+}
+
+@media (max-width:480px){
+    header{
+        margin-top: -20px;
+        text-align: center;
+    }
+    header h1{
+        font-size: 30px;
+    }
+
+    main{
+        padding:0;
+        margin:20px 0 0 0;
+        width: 100%;
+        box-shadow: none;
+    }
+
+    .button.mobile{
+        color: transparent;
+        font-size: 0;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        position: fixed;
+        top: 90vh;
+        left: 80vw;
+        z-index: 1;
+    }
+    .button.mobile::before{
+        content: "+";
+        color: white;
+        font-size: 2rem;
+        font-weight: 800;
+        width: 100%;
+        height: 100%;
+    }
+
+    .records{
+        border-spacing: 5px;
+    }
+    .records thead{
+        display: none;
+    }
+    .records tr{
+        box-shadow: 0 1px 3px rgb(180, 180, 180);
+    }
+    .records tr:hover{
+        background-color: inherit;
+    }
+    .records td{
+        margin: 10px 0;
+    }
+    .records td:first-child{
+        display: none;
+    }
+    .records td:nth-last-child(5){
+        border-right: 1px solid rgb(233, 233, 233);
+        width: 45%;
+        margin-right: 5px;
+        font-weight: 600;
+    }
+    .records td:nth-last-child(4),
+    .records td:nth-last-child(3),
+    .records td:nth-last-child(2),
+    .records td:nth-last-child(1){
+        /* background-color: red; */
+        display: flex;
+    }
+    .records td:nth-last-child(4),
+    .records td:nth-last-child(3),
+    .records td:nth-last-child(2){
+        margin-bottom: -10px;
+    }
+    .button.yellow{
+        font-size: 16px;
+        padding: 10px 15px 35px 15px;
+        margin:10px 5px;
+    }
+    .button.red{
+        font-size: 16px;
+        padding: 10px 15px 35px 15px;
+        margin:10px 5px;
+    }
+}
